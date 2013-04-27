@@ -1,4 +1,12 @@
 Bbj::Application.routes.draw do
+  root to: 'static_pages#home'
+
+  match '/history',     to: 'static_pages#history'
+  match '/halloffame',  to: 'static_pages#halloffame'
+  match '/champions',   to: 'static_pages#champions'
+  match '/players',     to: 'static_pages#players'
+  match '/pickoff2013', to: 'static_pages#pickoff2013'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

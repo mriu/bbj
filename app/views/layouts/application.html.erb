@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Bbj</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="container">
+        <img src="images/header.gif" alt="BBJ header image" align="center" width="700" height="100" />
+        <div id="globalnav">
+          <ul>
+            <li><%= link_to "Home", '#' %></li>
+            <li><%= link_to "2013 Rules & Info", '#' %></li>
+            <li><%= link_to "History", '#' %></li>
+            <li><%= link_to "Hall of Fame", '#' %></li>
+            <li><%= link_to "Champions", '#' %></li>
+            <li><%= link_to "Prominent Players", '#' %></li>
+            <li class="last"><a href="http://www.mysideline.com/u/19444/collegebbmens/">2013 Pick-off Site</a></li>
+          </ul>
+        </div><!-- end #globalnav -->
+        <div id="content">
+        <%= yield %>
+        </div><!-- end #content -->
+        <div id="footer">
+          <div id="copyright">
+            <p>&copy; Copyright 2013 Basket Ball Jones. All rights reserved.<br />Website design by <a href="mailto:bballjonesjr@gmail.com">Basket Ball Jones Jr.</a></p>
+          </div><!-- end #copyright -->
+        </div><!-- end #footer -->
+      </div><!-- end .container -->
+    </div><!-- end #wrapper -->
+  </body>
 </html>
+
