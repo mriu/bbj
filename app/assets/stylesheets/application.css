@@ -11,3 +11,215 @@
  *= require_self
  *= require_tree .
  */
+
+@charset "utf-8";
+@media all {
+
+/* BODY AND GLOBAL STYLES: =body
+----------------------------------------------- */
+	html { height: 100%; }
+	body { height: 100%; background-color: #FDFEDE; color: #990000; text-align: center;  }
+	body, input, textarea, select { font: 12px/18px Arial, Helvetica, sans-serif; }
+	div { margin-bottom: 20px; }
+	
+/* LINKS AND IMAGES: =links
+----------------------------------------------- */
+	a img { border: none; }
+	a:link, a:visited { color: #990000; }
+	a:hover { color: #F30; }
+	.video { float: left; padding-bottom: 20px; }
+	
+/* TYPOGRAPHY: =typography-
+----------------------------------------------- */
+	#container { font-size: 85%; }
+	h1 { color: #990000; font-size: 3em; line-height: 32px; margin: 0 0 18px 0; }
+	h2 { font-size: 18px; margin-bottom: 0.5em; margin-top: 12px; clear: both; }
+	h2.border { border-top: 2px solid #000; border-bottom: 2px solid #000; font-size: 2em; line-height: 22px; margin-bottom: 20px; padding-top: 4px; padding-bottom: 5px; text-align: center; clear: both; }
+	h3 { font-size: 1.5em; }
+	h4 { font-size: 1em; font-weight: bold; }
+	h3, h4, h5 { margin: 0 0 6px 0; }
+	p, blockquote, form, table { margin: 0 0 16px 0; padding: 0; }
+	p.backtotop { text-align: right; padding-bottom: 5px; clear: both; }
+	p.backtotop a { color: #990000; }
+	p.backtotop a:hover { color: #F30; }
+
+/* LAYOUT: =layout
+----------------------------------------------- */
+	#wrapper { float: left; clear: both; width: 100%; }
+	.container { clear: both; width: 704px; text-align: left; margin: 0 auto; }
+	#content { float: left; width: 500px; margin: 30px 0 0 25px; }
+	.fourcol { float: left; width: 125px; padding-bottom: 0px; }
+	.threecolL { float: left; }
+	.threecolM { float: left; }
+	.threecolR { float: right; }
+	.threecolL, .threecolM, .threecolR { width: 215px; padding-bottom: 15px; }
+	.halfL { width: 240px; float: left; text-align: left; }
+	.halfR { width: 240px; float: right; text-align: left; }
+	
+/* NAVIGATION: =nav
+----------------------------------------------- */
+	#globalnav { clear: both; height: 100%; float: left; }
+	#globalnav ul { width: 165px; margin: 30px 10px 0 -20px; list-style: none; }
+	#globalnav ul li { font-size: 1.1em; border-top: 1px solid #000; }
+	#globalnav ul li a { text-decoration: none; display: block; padding: 5px 10px; color: #000}
+	#globalnav ul li.last { border-bottom: 1px solid #000; }
+	#globalnav ul li.selected a { font-weight: bold; text-transform: uppercase; color: #F30; }
+	#globalnav ul li a:hover { color: #F30; }
+	#globalnav ul li.selected a:hover { font-weight: bold; text-transform: uppercase; color: #F30; }
+	
+/* LISTS: =lists
+----------------------------------------------- */
+	ul { margin: 0 0 18px 0; padding: 0 0 0 20px; }
+	ol { margin: 0 0 18px 0; padding: 0 0 0 20px; }
+	li { margin: 0 0 6px 0; padding: 0; }
+
+	dl { margin: 0 0 18px 0; padding: 0; }
+	dt { margin: 0 0 0 0; padding: 0; font-weight: bold; }
+	dd { margin-left: 0px; }
+
+/* HISTORY =history
+----------------------------------------------- */
+        .y2012 { background-color: #1b3da8; color: #FFF; font-size: 1.1em; padding: 10px; }
+	.y2012 a { color: #FFF; }
+	.y2012 a:visited { color: #FFF; }
+	.y2012 a:hover { color: #F30; }
+
+	.y2011, .y2004, .y1999 { background-color: #042a5c; color: #fcfefc; font-size: 1.1em; padding: 10px; }
+	.y2011 a, .y2004 a, .y1999 a { color: #fcfefc; }
+	.y2011 a:visited, .y2004 a:visited, .y1999 a:visited { color: #fcfefc; }
+	.y2011 a:hover, .y2004 a:hover, .y1999 a:hover { color: #F30; }
+
+	.y2010, .y2001, .y1992, .y1991 { background-color: #FFF; color: #00529c; font-size: 1.1em; padding: 10px; }
+	.y2010 a, .y2001 a, .y1992 a, .y1991 a { color: #00529c; }
+	.y2010 a:visited, .y2001 a:visited, .y1992 a:visited, .y1991 a:visited { color: #00529c; }
+	.y2010 a:hover, .y2001 a:hover, .y1992 a:hover, .y1991 a:hover { color: #F30; }
+
+	.y2009, .y2005, .y1993, .y1982 { background-color: #6ea4c6; color: #111939; font-size: 1.1em; padding: 10px; }
+	.y2009 a, .y2005 a, .y1993 a, .y1982 a { color: #111939; }
+	.y2009 a:visited, .y2005 a:visited, .y1993 a:visited, .y1982 a:visited { color: #111939; }
+	.y2009 a:hover, .y2005 a:hover, .y1993 a:hover, .y1982 a:hover { color: #F30; }
+	
+	.y2008 { background-color: #182d81; color: #f61820; font-size: 1.1em; padding: 10px; }
+	.y2008 a { color: #f61820; }
+	.y2008 a:visited { color: #f61820; }
+	.y2008 a:hover { color: #F30; }
+	
+	.y2007, .y2006 { background-color: #0362a8; color: #ef793f; font-size: 1.1em; padding: 10px; }
+	.y2007 a, .y2006 a { color: #ef793f; }
+	.y2007 a:visited, .y2006 a:visited { color: #ef793f; }
+	.y2007 a:hover, .y2006 a:hover { color: #F30; }
+	
+	.y2003 { background-color: #002a7a; color: #ff5d17; font-size: 1.1em; padding: 10px; }
+	.y2003 a { color: #ff5d17; }
+	.y2003 a:visited { color: #ff5d17; }
+	.y2003 a:hover { color: #F30; }
+	
+	.y2002 { background-color: #000; color: #cd1009; font-size: 1.1em; padding: 10px; }
+	.y2002 a { color: #cd1009; }
+	.y2002 a:visited { color: #cd1009; }
+	.y2002 a:hover { color: #F30; }
+
+	.y2000 { background-color: #146445; color: #FFF; font-size: 1.1em; padding: 10px; }
+	.y2000 a { color: #FFF; }
+	.y2000 a:visited { color: #FFF; }
+	.y2000 a:hover { color: #F30; }
+
+	.y1998, .y1996, .y1978 { background-color: #1063a9; color: #FFF; font-size: 1.1em; padding: 10px; }
+	.y1998 a, .y1996 a, .y1978 a { color: #FFF; }
+	.y1998 a:visited, .y1996 a:visited, .y1978 a:visited { color: #FFF; }
+	.y1998 a:hover, .y1996 a:hover, .y1978 a:hover { color: #F30; }
+	
+	.y1997 { background-color: #151c59; color: #d41426; font-size: 1.1em; padding: 10px; }
+	.y1997 a { color: #d41426; }
+	.y1997 a:visited { color: #d41426; }
+	.y1997 a:hover { color: #F30; }
+	
+	.y1995, .y1975, .y1973, .y1972, .y1971 { background-color: #1d57a0; color: #f5c10e; font-size: 1.1em; padding: 10px; }
+	.y1995 a, .y1975 a, .y1973 a, .y1972 a, .y1971 a { color: #f5c10e; }
+	.y1995 a:visited, .y1975 a:visited, .y1973 a:visited, .y1972 a:visited, .y1971 a:visited { color: #f5c10e; }
+	.y1995 a:hover, .y1975 a:hover, .y1973 a:hover, .y1972 a:hover, .y1971 a:hover { color: #F30; }
+	
+	.y1994 { background-color: #8c8d8d; color: #c90041; font-size: 1.1em; padding: 10px; }
+	.y1994 a { color: #c90041; }
+	.y1994 a:visited { color: #c90041; }
+	.y1994 a:hover { color: #F30; }
+
+	.y1990 { background-color: #5d7886; color: #d31e1d; font-size: 1.1em; padding: 10px; }
+	.y1990 a { color: #d31e1d; }
+	.y1990 a:visited { color: #d31e1d; }
+	.y1990 a:hover { color: #F30; }
+
+	.y1989 { background-color: #121849; color: #faeb14; font-size: 1.1em; padding: 10px; }
+	.y1989 a { color: #faeb14; }
+	.y1989 a:visited { color: #faeb14; }
+	.y1989 a:hover { color: #F30; }
+	
+	.y1988 { background-color: #0f5799; color: #eb3a41; font-size: 1.1em; padding: 10px; }
+	.y1988 a { color: #eb3a41; }
+	.y1988 a:visited { color: #eb3a41; }
+	.y1988 a:hover { color: #F30; }
+	
+	.y1987, .y1981, .y1976 { background-color: #eb181e; color: #FFF; font-size: 1.1em; padding: 10px; }
+	.y1987 a, .y1981 a, .y1976 a { color: #FFF; }
+	.y1987 a:visited, .y1981 a:visited, .y1976 a:visited { color: #FFF; }
+	.y1987 a:hover, .y1981 a:hover, .y1976 a:hover { color: #F30; }
+	
+	.y1986, .y1980 { background-color: #fb0f0c; color: #FFF; font-size: 1.1em; padding: 10px; }
+	.y1986 a, .y1980 a { color: #FFF; }
+	.y1986 a:visited, .y1980 a:visited { color: #FFF; }
+	.y1986 a:hover, .y1980 a:hover { color: #F30; }
+
+	.y1985 { background-color: #1c1a5c; color: #3ca6cc; font-size: 1.1em; padding: 10px; }
+	.y1985 a { color: #3ca6cc; }
+	.y1985 a:visited { color: #3ca6cc; }
+	.y1985 a:hover { color: #F30; }
+
+	.y1984 { background-color: #1c355b; color: #8f867f; font-size: 1.1em; padding: 10px; }
+	.y1984 a { color: #8f867f; }
+	.y1984 a:visited { color: #8f867f; }
+	.y1984 a:hover { color: #F30; }
+
+	.y1983, .y1974 { background-color: #c81019; color: #FFF; font-size: 1.1em; padding: 10px; }
+	.y1983 a, .y1974 a { color: #FFF; }
+	.y1983 a:visited, .y1974 a:visited { color: #FFF; }
+	.y1983 a:hover, .y1974 a:hover { color: #F30; }
+
+	.y1979 { background-color: #FFF; color: #004a26; font-size: 1.1em; padding: 10px; }
+	.y1979 a { color: #004a26; }
+	.y1979 a:visited { color: #004a26; }
+	.y1979 a:hover { color: #F30; }
+	
+	.y1977 { background-color: #030e76; color: #aa841a; font-size: 1.1em; padding: 10px; }
+	.y1977 a { color: #aa841a; }
+	.y1977 a:visited { color: #aa841a; }
+	.y1977 a:hover { color: #F30; }
+	
+/* TABLES: =tables
+----------------------------------------------- */
+	table { border-collapse: collapse; margin: 0 0 18px 0; }
+	table th { font-weight: bold; text-align: center; }
+	table td { padding: 5px 0 5px 0; text-align: center; vertical-align: top; border: 1px solid #000; }
+	
+/* FOOTER: =footer
+----------------------------------------------- */
+	#footer { clear: both; border-top: 1px solid #000; width: 100%; padding: 16px 0 16px 0; margin-top: 10px; }
+	#footer #getfirefox { float: left; margin-left: 199px; } 
+	#footer #copyright { text-align: center; width: 329px; margin-left: 287px; }
+	#footer #w3c { float: left; }
+
+/* MISC: =misc
+----------------------------------------------- */
+	.clearboth { clear: both; }
+	.nowrap { white-space: nowrap; }
+	.skip { margin-bottom: 0; position: absolute; left: -999em; width: 999em; }
+	.nomargin { margin: 0; }
+	.left { float: left; }
+	.right { float: right; }
+	.u { text-decoration: underline; }
+	.em { font-style: italic; }
+	.bold { font-weight: bold; }
+	.center { text-align: center; }
+	.fullwidth { width: 646px; }
+	.red { color: #ff0000; }
+
+}

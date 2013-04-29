@@ -9,4 +9,8 @@ module ApplicationHelper
       "#{base_title} | #{page_title}"
     end
   end
+
+  def is_selected?(page_name)
+    "selected" if params[:action] == page_name
+  end
 end

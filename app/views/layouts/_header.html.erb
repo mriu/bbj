@@ -1,14 +1,14 @@
     <div id="wrapper">
       <div class="container">
-        <img src="images/header.gif" alt="BBJ header image" align="center" width="700" height="100" />
+        <img src="assets/header.gif" alt="BBJ header image" align="center" width="700" height="100" />
         <div id="globalnav">
           <ul>
-            <li><%= link_to "Home", 'root_path' %></li>
-            <li><%= link_to "2013 Rules & Info", 'pickoff2013_path' %></li>
-            <li><%= link_to "History", 'history_path' %></li>
-            <li><%= link_to "Hall of Fame", 'halloffame_path' %></li>
-            <li><%= link_to "Champions", 'champions_path' %></li>
-            <li><%= link_to "Prominent Players", 'players_path' %></li>
+            <li class="<%= is_selected?("home") %>"><%= link_to "Home", root_path %></li>
+            <li class="<%= is_selected?("pickoff2013") %>"><%= link_to "2013 Rules & Info", pickoff2013_path %></li>
+            <li class="<%= is_selected?("history") %>"><%= link_to "History", history_path %></li>
+            <li class="<%= is_selected?("halloffame") %>"><%= link_to "Hall of Fame", halloffame_path %></li>
+            <li class="<%= is_selected?("champions") %>"><%= link_to "Champions", champions_path %></li>
+            <li class="<%= is_selected?("players") %>"><%= link_to "Prominent Players", players_path %></li>
             <li class="last"><a href="http://www.mysideline.com/u/19444/collegebbmens/">2013 Pick-Off Site</a></li>
           </ul>
         </div><!-- end #globalnav -->

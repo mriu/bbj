@@ -42,7 +42,7 @@ describe "Players page" do
 describe "2013 Rules page" do
     before { visit pickoff2013_path }
 
-    it { should have_selector('h1',    text: '2013 Rules & Information') }
-    it { should have_selector('title', text: full_title('2013 Rules & Information')) }
+    it { should have_selector('h1',    text: '2013 Rules and Information') }
+    it { should have_selector('title', text: full_title('2013 Rules and Information')) }
   end
 end
