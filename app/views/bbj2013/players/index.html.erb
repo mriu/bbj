@@ -1,0 +1,27 @@
+<h1>Listing bbj2013_players</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bbj2013_players.each do |bbj2013_player| %>
+  <tr>
+    <td><%= bbj2013_player.name %></td>
+    <td><%= bbj2013_player.email %></td>
+    <td><%= bbj2013_player.phone %></td>
+    <td><%= link_to 'Show', bbj2013_player %></td>
+    <td><%= link_to 'Edit', edit_bbj2013_player_path(bbj2013_player) %></td>
+    <td><%= link_to 'Destroy', bbj2013_player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Player', new_bbj2013_player_path %>

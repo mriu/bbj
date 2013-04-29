@@ -1,4 +1,9 @@
 Bbj::Application.routes.draw do
+  namespace :bbj2013 do
+    resources :players
+  end
+
+
   root to: 'static_pages#home'
 
   match '/history',     to: 'static_pages#history'
