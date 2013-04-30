@@ -1,4 +1,6 @@
 class Player < ActiveRecord::Base
+  has_one :picksheet
+
   attr_accessible :correctChamp, :name, :pickPct, :place, :points, :predictedChamp, :tiebreaker, :year
   validates :name, :pickPct, :predictedChamp, :presence => true
   validates :year, :numericality => {:greater_than_or_equal_to => 2005,
