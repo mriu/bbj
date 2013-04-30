@@ -1,4 +1,7 @@
 Bbj::Application.routes.draw do
+  resources :picksheets
+
+
   resources :players
 
   root to: 'static_pages#home'

@@ -1,0 +1,153 @@
+<h1>Listing picksheets</h1>
+
+<table>
+  <tr>
+    <th>Year</th>
+    <th>Name</th>
+    <th>R1g01</th>
+    <th>R1g02</th>
+    <th>R1g03</th>
+    <th>R1g04</th>
+    <th>R1g05</th>
+    <th>R1g06</th>
+    <th>R1g07</th>
+    <th>R1g08</th>
+    <th>R1g09</th>
+    <th>R1g10</th>
+    <th>R1g11</th>
+    <th>R1g12</th>
+    <th>R1g13</th>
+    <th>R1g14</th>
+    <th>R1g15</th>
+    <th>R1g16</th>
+    <th>R1g17</th>
+    <th>R1g18</th>
+    <th>R1g19</th>
+    <th>R1g20</th>
+    <th>R1g21</th>
+    <th>R1g22</th>
+    <th>R1g23</th>
+    <th>R1g24</th>
+    <th>R1g25</th>
+    <th>R1g26</th>
+    <th>R1g27</th>
+    <th>R1g28</th>
+    <th>R1g29</th>
+    <th>R1g30</th>
+    <th>R1g31</th>
+    <th>R1g32</th>
+    <th>R2g01</th>
+    <th>R2g02</th>
+    <th>R2g03</th>
+    <th>R2g04</th>
+    <th>R2g05</th>
+    <th>R2g06</th>
+    <th>R2g07</th>
+    <th>R2g08</th>
+    <th>R2g09</th>
+    <th>R2g10</th>
+    <th>R2g11</th>
+    <th>R2g12</th>
+    <th>R2g13</th>
+    <th>R2g14</th>
+    <th>R2g15</th>
+    <th>R2g16</th>
+    <th>R3g01</th>
+    <th>R3g02</th>
+    <th>R3g03</th>
+    <th>R3g04</th>
+    <th>R3g05</th>
+    <th>R3g06</th>
+    <th>R3g07</th>
+    <th>R3g08</th>
+    <th>R4g01</th>
+    <th>R4g02</th>
+    <th>R4g03</th>
+    <th>R4g04</th>
+    <th>R5g01</th>
+    <th>R5g02</th>
+    <th>Champ</th>
+    <th>Tiebreaker</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @picksheets.each do |picksheet| %>
+  <tr>
+    <td><%= picksheet.year %></td>
+    <td><%= picksheet.name %></td>
+    <td><%= picksheet.r1g01 %></td>
+    <td><%= picksheet.r1g02 %></td>
+    <td><%= picksheet.r1g03 %></td>
+    <td><%= picksheet.r1g04 %></td>
+    <td><%= picksheet.r1g05 %></td>
+    <td><%= picksheet.r1g06 %></td>
+    <td><%= picksheet.r1g07 %></td>
+    <td><%= picksheet.r1g08 %></td>
+    <td><%= picksheet.r1g09 %></td>
+    <td><%= picksheet.r1g10 %></td>
+    <td><%= picksheet.r1g11 %></td>
+    <td><%= picksheet.r1g12 %></td>
+    <td><%= picksheet.r1g13 %></td>
+    <td><%= picksheet.r1g14 %></td>
+    <td><%= picksheet.r1g15 %></td>
+    <td><%= picksheet.r1g16 %></td>
+    <td><%= picksheet.r1g17 %></td>
+    <td><%= picksheet.r1g18 %></td>
+    <td><%= picksheet.r1g19 %></td>
+    <td><%= picksheet.r1g20 %></td>
+    <td><%= picksheet.r1g21 %></td>
+    <td><%= picksheet.r1g22 %></td>
+    <td><%= picksheet.r1g23 %></td>
+    <td><%= picksheet.r1g24 %></td>
+    <td><%= picksheet.r1g25 %></td>
+    <td><%= picksheet.r1g26 %></td>
+    <td><%= picksheet.r1g27 %></td>
+    <td><%= picksheet.r1g28 %></td>
+    <td><%= picksheet.r1g29 %></td>
+    <td><%= picksheet.r1g30 %></td>
+    <td><%= picksheet.r1g31 %></td>
+    <td><%= picksheet.r1g32 %></td>
+    <td><%= picksheet.r2g01 %></td>
+    <td><%= picksheet.r2g02 %></td>
+    <td><%= picksheet.r2g03 %></td>
+    <td><%= picksheet.r2g04 %></td>
+    <td><%= picksheet.r2g05 %></td>
+    <td><%= picksheet.r2g06 %></td>
+    <td><%= picksheet.r2g07 %></td>
+    <td><%= picksheet.r2g08 %></td>
+    <td><%= picksheet.r2g09 %></td>
+    <td><%= picksheet.r2g10 %></td>
+    <td><%= picksheet.r2g11 %></td>
+    <td><%= picksheet.r2g12 %></td>
+    <td><%= picksheet.r2g13 %></td>
+    <td><%= picksheet.r2g14 %></td>
+    <td><%= picksheet.r2g15 %></td>
+    <td><%= picksheet.r2g16 %></td>
+    <td><%= picksheet.r3g01 %></td>
+    <td><%= picksheet.r3g02 %></td>
+    <td><%= picksheet.r3g03 %></td>
+    <td><%= picksheet.r3g04 %></td>
+    <td><%= picksheet.r3g05 %></td>
+    <td><%= picksheet.r3g06 %></td>
+    <td><%= picksheet.r3g07 %></td>
+    <td><%= picksheet.r3g08 %></td>
+    <td><%= picksheet.r4g01 %></td>
+    <td><%= picksheet.r4g02 %></td>
+    <td><%= picksheet.r4g03 %></td>
+    <td><%= picksheet.r4g04 %></td>
+    <td><%= picksheet.r5g01 %></td>
+    <td><%= picksheet.r5g02 %></td>
+    <td><%= picksheet.champ %></td>
+    <td><%= picksheet.tiebreaker %></td>
+    <td><%= link_to 'Show', picksheet %></td>
+    <td><%= link_to 'Edit', edit_picksheet_path(picksheet) %></td>
+    <td><%= link_to 'Destroy', picksheet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Picksheet', new_picksheet_path %>

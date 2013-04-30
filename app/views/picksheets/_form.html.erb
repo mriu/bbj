@@ -1,0 +1,281 @@
+<%= form_for(@picksheet) do |f| %>
+  <% if @picksheet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@picksheet.errors.count, "error") %> prohibited this picksheet from being saved:</h2>
+
+      <ul>
+      <% @picksheet.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :year %><br />
+    <%= f.number_field :year %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g01 %><br />
+    <%= f.text_field :r1g01 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g02 %><br />
+    <%= f.text_field :r1g02 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g03 %><br />
+    <%= f.text_field :r1g03 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g04 %><br />
+    <%= f.text_field :r1g04 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g05 %><br />
+    <%= f.text_field :r1g05 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g06 %><br />
+    <%= f.text_field :r1g06 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g07 %><br />
+    <%= f.text_field :r1g07 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g08 %><br />
+    <%= f.text_field :r1g08 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g09 %><br />
+    <%= f.text_field :r1g09 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g10 %><br />
+    <%= f.text_field :r1g10 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g11 %><br />
+    <%= f.text_field :r1g11 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g12 %><br />
+    <%= f.text_field :r1g12 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g13 %><br />
+    <%= f.text_field :r1g13 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g14 %><br />
+    <%= f.text_field :r1g14 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g15 %><br />
+    <%= f.text_field :r1g15 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g16 %><br />
+    <%= f.text_field :r1g16 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g17 %><br />
+    <%= f.text_field :r1g17 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g18 %><br />
+    <%= f.text_field :r1g18 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g19 %><br />
+    <%= f.text_field :r1g19 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g20 %><br />
+    <%= f.text_field :r1g20 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g21 %><br />
+    <%= f.text_field :r1g21 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g22 %><br />
+    <%= f.text_field :r1g22 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g23 %><br />
+    <%= f.text_field :r1g23 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g24 %><br />
+    <%= f.text_field :r1g24 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g25 %><br />
+    <%= f.text_field :r1g25 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g26 %><br />
+    <%= f.text_field :r1g26 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g27 %><br />
+    <%= f.text_field :r1g27 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g28 %><br />
+    <%= f.text_field :r1g28 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g29 %><br />
+    <%= f.text_field :r1g29 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g30 %><br />
+    <%= f.text_field :r1g30 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g31 %><br />
+    <%= f.text_field :r1g31 %>
+  </div>
+  <div class="field">
+    <%= f.label :r1g32 %><br />
+    <%= f.text_field :r1g32 %>
+  </div>
+  <div class="field">
+    <%= f.label :r2g01 %><br />
+    <%= f.text_field :r2g01 %>
+  </div>
+  <div class="field">
+    <%= f.label :r2g02 %><br />
+    <%= f.text_field :r2g02 %>
+  </div>
+  <div class="field">
+    <%= f.label :r2g03 %><br />
+    <%= f.text_field :r2g03 %>
+  </div>
+  <div class="field">
+    <%= f.label :r2g04 %><br />
+    <%= f.text_field :r2g04 %>
+  </div>
+  <div class="field">
+    <%= f.label :r2g05 %><br />
+    <%= f.text_field :r2g05 %>
+  </div>
+  <div class="field">
+    <%= f.label :r2g06 %><br />
+    <%= f.text_field :r2g06 %>
+  </div>
+  <div class="field">
+    <%= f.label :r2g07 %><br />
+    <%= f.text_field :r2g07 %>
+  </div>
+  <div class="field">
+    <%= f.label :r2g08 %><br />
+    <%= f.text_field :r2g08 %>
+  </div>
+  <div class="field">
+    <%= f.label :r2g09 %><br />
+    <%= f.text_field :r2g09 %>
+  </div>
+  <div class="field">
+    <%= f.label :r2g10 %><br />
+    <%= f.text_field :r2g10 %>
+  </div>
+  <div class="field">
+    <%= f.label :r2g11 %><br />
+    <%= f.text_field :r2g11 %>
+  </div>
+  <div class="field">
+    <%= f.label :r2g12 %><br />
+    <%= f.text_field :r2g12 %>
+  </div>
+  <div class="field">
+    <%= f.label :r2g13 %><br />
+    <%= f.text_field :r2g13 %>
+  </div>
+  <div class="field">
+    <%= f.label :r2g14 %><br />
+    <%= f.text_field :r2g14 %>
+  </div>
+  <div class="field">
+    <%= f.label :r2g15 %><br />
+    <%= f.text_field :r2g15 %>
+  </div>
+  <div class="field">
+    <%= f.label :r2g16 %><br />
+    <%= f.text_field :r2g16 %>
+  </div>
+  <div class="field">
+    <%= f.label :r3g01 %><br />
+    <%= f.text_field :r3g01 %>
+  </div>
+  <div class="field">
+    <%= f.label :r3g02 %><br />
+    <%= f.text_field :r3g02 %>
+  </div>
+  <div class="field">
+    <%= f.label :r3g03 %><br />
+    <%= f.text_field :r3g03 %>
+  </div>
+  <div class="field">
+    <%= f.label :r3g04 %><br />
+    <%= f.text_field :r3g04 %>
+  </div>
+  <div class="field">
+    <%= f.label :r3g05 %><br />
+    <%= f.text_field :r3g05 %>
+  </div>
+  <div class="field">
+    <%= f.label :r3g06 %><br />
+    <%= f.text_field :r3g06 %>
+  </div>
+  <div class="field">
+    <%= f.label :r3g07 %><br />
+    <%= f.text_field :r3g07 %>
+  </div>
+  <div class="field">
+    <%= f.label :r3g08 %><br />
+    <%= f.text_field :r3g08 %>
+  </div>
+  <div class="field">
+    <%= f.label :r4g01 %><br />
+    <%= f.text_field :r4g01 %>
+  </div>
+  <div class="field">
+    <%= f.label :r4g02 %><br />
+    <%= f.text_field :r4g02 %>
+  </div>
+  <div class="field">
+    <%= f.label :r4g03 %><br />
+    <%= f.text_field :r4g03 %>
+  </div>
+  <div class="field">
+    <%= f.label :r4g04 %><br />
+    <%= f.text_field :r4g04 %>
+  </div>
+  <div class="field">
+    <%= f.label :r5g01 %><br />
+    <%= f.text_field :r5g01 %>
+  </div>
+  <div class="field">
+    <%= f.label :r5g02 %><br />
+    <%= f.text_field :r5g02 %>
+  </div>
+  <div class="field">
+    <%= f.label :champ %><br />
+    <%= f.text_field :champ %>
+  </div>
+  <div class="field">
+    <%= f.label :tiebreaker %><br />
+    <%= f.number_field :tiebreaker %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
