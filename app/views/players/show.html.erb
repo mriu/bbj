@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Year:</b>
+  <%= @player.year %>
+</p>
+
+<p>
+  <b>Place:</b>
+  <%= @player.place %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @player.name %>
+</p>
+
+<p>
+  <b>Points:</b>
+  <%= @player.points %>
+</p>
+
+<p>
+  <b>Tiebreaker:</b>
+  <%= @player.tiebreaker %>
+</p>
+
+<p>
+  <b>Pick %:</b>
+  <%= @player.pickPct %>
+</p>
+
+<p>
+  <b>Predicted Champ:</b>
+  <%= @player.predictedChamp %>
+</p>
+
+<p>
+  <b>Correct Champ?:</b>
+  <%= @player.correctChamp %>
+</p>
+
+
+<%= link_to 'Edit', edit_player_path(@player) %> |
+<%= link_to 'Back', players_path %>

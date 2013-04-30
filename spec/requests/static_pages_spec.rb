@@ -33,7 +33,7 @@ describe "Champions page" do
   end
 
 describe "Players page" do
-    before { visit players_path }
+    before { visit prominentplayers_path }
 
     it { should have_selector('h1',    text: 'Prominent Players') }
     it { should have_selector('title', text: full_title('Prominent Players')) }

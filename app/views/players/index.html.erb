@@ -1,0 +1,37 @@
+<h1>BBJ Players</h1>
+
+<table>
+  <tr>
+    <th>Year</th>
+    <th>Place</th>
+    <th>Name</th>
+    <th>Points</th>
+    <th>Tie</th>
+    <th>Pick %</th>
+    <th>Predicted Champ</th>
+    <th>Correct Champ?</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @players.each do |player| %>
+  <tr>
+    <td><%= player.year %></td>
+    <td><%= player.place %></td>
+    <td><%= player.name %></td>
+    <td><%= player.points %></td>
+    <td><%= player.tiebreaker %></td>
+    <td><%= player.pickPct %></td>
+    <td><%= player.predictedChamp %></td>
+    <td><%= player.correctChamp %></td>
+    <td><%= link_to 'Show', player %></td>
+    <td><%= link_to 'Edit', edit_player_path(player) %></td>
+    <td><%= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Player', new_player_path %>
