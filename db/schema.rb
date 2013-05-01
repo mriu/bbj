@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130430015235) do
+ActiveRecord::Schema.define(:version => 20130430051001) do
 
   create_table "bbj2013_players", :force => true do |t|
     t.string   "name"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(:version => 20130430015235) do
   end
 
   create_table "picksheets", :force => true do |t|
+    t.integer  "player_id"
     t.integer  "year"
     t.string   "name"
     t.string   "r1g01"
