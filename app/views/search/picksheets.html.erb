@@ -1,0 +1,24 @@
+<h1>Search Picksheets</h1>
+<p>There are <%= num_picksheets %> picksheets in the database from 2005 to 2013.</p>
+<p>Enter search criteria below to lookup BBJ picksheets.</p>
+
+<!-- Form to collect input -->
+<form action="picksheets_result" method="post">
+  Year: <input type="text" size="4" name="year" />
+  Name: <input type="text" size="12" name="name" />
+  R1g01: <input type="text" size="5" name="r1g01" />
+  R1g02: <input type="text" size="5" name="r1g02" />
+  R4g01: <input type="text" size="5" name="r4g01" />
+  R4g02: <input type="text" size="5" name="r4g02" />
+  R4g03: <input type="text" size="5" name="r4g03" />
+  R4g04: <input type="text" size="5" name="r4g04" />
+  R5g01: <input type="text" size="5" name="r5g01" />
+  R5g02: <input type="text" size="5" name="r5g02" />
+  Champ: <input type="text" size="12" name="champ" />
+  Tiebreaker min: <input type="text" size="3" name="tiebreakerMin" />
+  Tiebreaker max: <input type="text" size="3" name="tiebreakerMax" />
+<br />
+  <input type="submit" value="Submit request" /> <br />
+  <input type="reset" value="Reset form" /> <br />
+</form>
+

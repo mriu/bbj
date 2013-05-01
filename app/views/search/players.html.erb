@@ -1,0 +1,18 @@
+<% provide(:title, 'Search') %>
+<h1>Search Players</h1>
+<p>There are (num_players) BBJ players in the database from 2005 to 2013.</p>
+<p>Enter search criteria below to lookup BBJ players.</p>
+
+<!-- Form to collect input -->
+<form action="players_result" method="post">
+  Year: <input type="text" size="4" name="year" />
+  Place: <input type="text" size="2" name="place" />
+  Name: <input type="text" size="12" name="name" />
+  Pick % Min: <input type="text" size="2" name="pickPctMin" />
+  Pick % Max: <input type="text" size="2" name="pickPctMax" />
+  Predicted Champ: <input type="text" size="12" name="predictedChamp" />
+<br />
+  <input type="submit" value="Submit request" /> <br />
+  <input type="reset" value="Reset form" /> <br />
+</form>
+

@@ -1,0 +1,28 @@
+<!-- result of searched information for BBJ players -->
+
+<p>Players that meet search criteria:</p>
+
+<!-- Display the results of the request in a table -->
+<table border = "border">
+  <tr>
+    <th>Year</th>
+    <th>Place</th>
+    <th>Name</th>
+    <th>Points</th>
+    <th>Pick %</th>
+    <th>Predicted Champ</th>
+  </tr>
+
+<!-- Put the players in @selected_players in the table -->
+  <% @selectedPlayers.each do |player| %>
+    <tr>
+      <td> <%= player.year %> </td>
+      <td> <%= player.place %> </td>
+      <td> <%= player.name %> </td>
+      <td> <%= player.points %> </td>
+      <td> <%= player.pickPct %> </td>
+      <td> <%= player.predictedChamp %> </td>
+    </tr>
+    <% end %> <!-- end of do loop -->
+</table>
+

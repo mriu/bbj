@@ -1,6 +1,11 @@
 Bbj::Application.routes.draw do
+  get "search/players"  
+  post "search/players_result"
+ 
+  get "search/picksheets"
+  post "search/picksheets_result"
+ 
   resources :picksheets
-
 
   resources :players
 
